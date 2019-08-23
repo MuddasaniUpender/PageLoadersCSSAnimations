@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> RIPPLE EFFECT</title>
+	<style type="text/css">
+		.header{
+			position: relative;
+			width: 100%;
+		}
+		.ripple{
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			background-color: blue;
+			border-radius: 50%;
+			left:0;
+			right: 0;
+			top: 50%;
+			margin: -10px auto;
+			animation: rip 0.7s linear infinite;
+		}
+		.ripple:before{
+			position: absolute;
+			content: "";
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			border: solid 2px blue;
+			animation: rip 0.7s linear infinite;
+			border-radius: 50%;
+		}
+		@keyframes rip{
+			100%{
+				transform: scale(2);
+				opacity: 0.8;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<div class="ripple">
+		<p style="font-size: ; color: white; text-align: center;">VIRUS ATTACK</p>
+	</div>
+	</header>
+</body>
+</html>

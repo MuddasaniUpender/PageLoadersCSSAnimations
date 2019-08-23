@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    #field{
+          height: 40px;
+          border: 1px solid #fdfdfd26;
+          background-color: white;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+    }
+    #hh{
+      width:340px;
+    }
+
+    #ball{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 50px;
+      transition: all 1s;
+      animation: border 5s linear infinite;
+    }
+    @keyframes border{
+        0%   { left: 0px; top: 0px;}
+        5% { left: 50px;top: 0px; }
+        10% {left : 100px; top: 0px;}
+        15%{left : 150px; top: 0px;}
+        20%  { left: 200px; top: 0px;}
+        30%  { left: 300px; top:0px;}
+        40%  { left: 400px; top: 0px;}
+        50% { left: 500px; top: 0px;}
+        60% { left: 600px; top: 0px;}
+        70% { left: 700px; top: 0px;}
+        80% { left: 800px; top: 0px;}
+        90% { left: 1000px; top: 0px;}
+        100% { left: 1200px; top: 0px;}
+      }
+    }
+  </style>
+ 
+</head>
+<body id="field">
+   
+    <img src="https://cdn.dribbble.com/users/989157/screenshots/3832443/monkey.gif"  id="ball" > 
+ <script>
+    ball.onclick=function(){
+      alert("you won dude! repeat it");
+    }
+  </script>
+
+
+  </body>
+</html>
+  
